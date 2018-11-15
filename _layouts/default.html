@@ -3,21 +3,27 @@
     <title>blog.thebatclaud.io - another developer's blog</title>
 
     <link href="/src/css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
     <div id="particles-js"></div>
 
-    <h1 id="logo"><span>blog</span>.the<span>bat</span>claud.<span>io</span></h1>
+    <div class="container">
+        <h1 id="logo"><span>blog</span>.the<span>bat</span>claud.<span>io</span></h1>
 
-    <ul>
-        {% for post in site.posts %}
-            <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-        {% endfor %}
-    </ul>
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="/src/js/main.js"></script>
 </body>
 </html>

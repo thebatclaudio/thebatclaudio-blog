@@ -1,26 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-11-07 00:58:00 +0100
-author: Claudio La Barbera
-categories: jekyll update
+title:  Goodbye Wordpress, welcome Jekyll
+date:   2018-11-15 02:10:00 +0100
+author: thebatclaudio
+categories: development
+tags: [blog, web development, jekyll, wordpress]
+excerpt_separator: <!--more-->
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+**It's always the same.** Everytime I open a new blog **I don't know how to start my first post** *.
+<!--more-->
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I'm **Claudio La Barbera**, a **web developer** based in **Palermo**. 
 
-Jekyll also offers powerful support for code snippets:
+I love IT since I was a child: I watched with amazement **Amiga 600 videogames** and my father browsing the web with a **56k**. 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Now, between commits I like to play my guitar, read my comic books (specially **Batman**) and watch good films.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+This is my new blog and here I will talk about whatever will pops into my head. I was tired to use **Wordpress**, so I'm starting this new adventure with **Jekyll** and trying to adapt the template to [my website](https://thebatclaud.io).
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Bye.
+
+
+
