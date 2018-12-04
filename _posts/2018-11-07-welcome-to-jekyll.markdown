@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Goodbye Wordpress, welcome Jekyll
+image: welcome-to-jekyll.jpg
 date:   2018-11-15 02:10:00 +0100
 author: thebatclaudio
 categories: development

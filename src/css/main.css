@@ -9,17 +9,25 @@ html, body {
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+header {
+    padding: 30px 0px 10px 0px;
+}
+
 #logo {
     font-family: 'Aldrich', sans-serif;
     color: #FFF;
-    font-size: 25px;
+    font-size: 36px;
     margin: 0px;
-    padding: 30px 0px;
+    padding: 0px;
     font-weight: 800;
 }
 
 #logo span {
     color: #a53232;
+}
+
+#menu-button {
+    font-size: 36px;
 }
 
 #particles-js {
@@ -36,4 +44,281 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, p, label, div, .container {
     color: #FFF;
+}
+
+a:link, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* posts loop container used in index and archives pages */
+.posts-container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* post element */
+article.post {
+    margin: 0px;
+    padding: 0px 5% 35px 5%;
+}
+
+article.post.single {
+    padding: 0px 0px 35px; /* in single page i want less padding */
+}
+
+article.post:first-child {
+    margin-top: 0px; /* first child must be near to homelink */
+}
+
+/* different post's color for even and odd */
+article.post:nth-child(odd) {
+    background-color: #424242;
+    color: rgba(255,255,255,0.87);;
+}
+
+article.post:nth-child(even) {
+    background-color: #E0E0E0;
+    color: rgba(0,0,0,0.87);
+}
+
+/* featured image */
+.featured-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 120px;
+    width: 100%;
+}
+
+.single.post .featured-image {
+	    height: 260px;
+}
+
+.featured-image.odd {
+    float: right;
+}
+
+.featured-image img {
+    display: none;
+}
+
+/* category link hover featured image */
+.post a.category-link {
+    display: inline-block;
+    width: auto;
+    padding: 15px;
+    margin-top: -15px;
+    background-color: #424242;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.87);
+}
+
+.post:nth-child(even) a.category-link {
+    background-color: #E0E0E0;
+    color: rgba(0,0,0,0.87);
+}
+
+.post .category {
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* post title */
+.post .title {
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.post.single h1.title {
+    margin-bottom: 40px;
+}
+
+/* post content and post single title */
+.post .post-content, .post.single h1.title {
+    width: 96%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* post content in single page */
+.post.single .post-content, .post.single .comments {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.single .post-content p {
+    display: block;
+}
+
+.post-content p {
+    text-align: center;
+    font-size: 16px;
+    font-weight:100;
+    display: none;
+}
+
+/* tags */
+.tags {
+    margin: 10px 0px;
+    text-align: center;
+    display: none;
+}
+
+.tags a {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.tags a:before {
+    content: "#";
+}
+
+/* date */
+.post .date {
+    text-align: center;
+}
+
+a.btn-continue-reading {
+    display: inline-block;
+    font-weight: 400;
+    margin: 10px auto;
+    text-transform: uppercase;
+    background-color: #E0E0E0;
+    color: rgba(0,0,0,0.87);
+    min-width: 33.333333333333%;
+}
+
+.post:nth-child(even) a.btn-continue-reading {
+    background-color: #424242;
+    color: rgba(255,255,255,0.87);
+}
+
+.post a.category-link:hover, .post a.category-link:focus, .post a.category-link:active, .post a.btn-continue-reading:hover, .post a.btn-continue-reading:active, .post a.btn-continue-reading:focus {
+    text-decoration: none;
+    background-color: #B71C1C;
+    color: rgba(255,255,255,0.87);
+}
+
+.main-posts .col-md-6 {
+    padding: 0px;
+}
+
+.featured {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+.small-featured .col-md-6 > .featured {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.featured::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.featured img {
+    display: none;
+}
+
+.col-md-6.right .featured,  .col-md-6.mid-height .featured{
+    height: 250px;
+}
+
+.featured-post-content {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+}
+
+.featured-post-content h3 {
+    font-size: 32px;
+    margin: 0px;
+}
+
+.col-md-6.right .featured .featured-post-content h3 {
+    font-size: 18px;
+}
+
+/* category link hover featured image */
+.featured a.category-link {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    margin-right: 0px;
+    background-color: #B71C1C;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.87);
+    text-align: right;
+}
+
+.featured a.category-link:hover, .featured a.category-link:focus, .featured a.category-link:active, .featured a.btn-continue-reading:hover, .featured a.btn-continue-reading:active, .featured a.btn-continue-reading:focus {
+    text-decoration: none;
+    background-color: #C62828;
+    color: rgba(255,255,255,0.87);
+}
+
+.featured .category {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.featured a h3 {
+    color: #FFF;
+}
+
+.featured a:hover h3, .featured a:focus h3, .featured a:active h3 {
+    color: #a53232;
+}
+
+@media (min-width: 767px) {
+    .post-content .tags {
+        display: block;
+    }
+
+    .small-featured .left .featured {
+        margin-right: 0px;
+    }
+
+    .small-featured .right .featured {
+        margin-left: 0px;
+    }
+
+    .small-featured .left .featured {
+        margin-left: 0px;
+    }
+
+    .small-featured .right .featured {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .post-content p {
+        display: block;
+    }
+}
+
+.main-posts .col-md-6.padding-right-15 {
+    padding-right: 15px;
+}
+
+.main-posts .col-md-6.padding-left-15 {
+    padding-left: 15px;
 }
