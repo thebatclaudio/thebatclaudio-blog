@@ -96,7 +96,57 @@
                 </div>
             </div>
         </div>
-        </ul>
+
+        <div class="row">
+
+            <div class="posts-container col-md-8">
+                {% for post in site.posts offset:3 %}
+                <article class="post {% cycle 'odd', 'even' %}">
+                    <a href="{{ post.url }}" title="{{ post.title }}">
+                        <figure class="featured-image" style="background-image: url('{{ site.baseurl }}/src/images/{{ post.image }}')">
+                            <img src="{{ site.baseurl }}/src/images/{{ post.image }}" alt="{{ post.title }}"> 
+                        </figure>
+                    </a>
+                                        
+                    <div class="post-content">
+                        <div class="date">{{ post.date }}</div>
+                        <h3 class="title">{{ post.title }}</h3>
+                        <p>{{ post.excerpt }}</p>
+                        <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-continue-reading">
+                            Read
+                        </a>
+                        
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+
+            
+            <div class="sidebar-container col-md-4" style="position: relative; top: auto;">
+                <div class="widget about-me-widget">
+                    <h2 class="widget-title">About Me</h2>
+                    
+                    <div class="about-me-image" style="background-image: url('{{ site.baseurl }}/src/images/claudiolabarbera.jpg')">
+                    </div>
+                        
+                    <div class="about-me-description">
+                        Developer di giorno. Giustiziere mascherato di notte. Tra un commit e un'azione eroica suono la mia chitarra.
+                    </div>
+                </div>
+                
+                <div class="widget social-icons-widget">
+                    <h2 class="widget-title">Follow me on</h2>
+                    <ul class="icons-medium">		
+                        <li class="facebook"><a href="https://Facebook.com/thebatclaudio" target="_blank"><img class="site-icon" src="https://claudiolabarbera.com/wp-content/plugins/social-media-icons-widget/icons/medium/facebook.jpg" alt="Facebook" title="Facebook" height="32" width="32"></a></li>		
+                        <li class="github"><a href="https://github.com/thebatclaudio" target="_blank"><img class="site-icon" src="https://claudiolabarbera.com/wp-content/plugins/social-media-icons-widget/icons/medium/github.jpg" alt="GitHub" title="GitHub" height="32" width="32"></a></li>		
+                        <li class="instagram"><a href="https://instagram.com/thebatclaudio" target="_blank"><img class="site-icon" src="https://claudiolabarbera.com/wp-content/plugins/social-media-icons-widget/icons/medium/instagram.jpg" alt="Instagram" title="Instagram" height="32" width="32"></a></li>		
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/claudio-la-barbera-15619252/" target="_blank"><img class="site-icon" src="https://claudiolabarbera.com/wp-content/plugins/social-media-icons-widget/icons/medium/linkedin.jpg" alt="LinkedIn" title="LinkedIn" height="32" width="32"></a></li>		
+                        <li class="twitter"><a href="https://twitter.com/thebatclaudio" target="_blank"><img class="site-icon" src="https://claudiolabarbera.com/wp-content/plugins/social-media-icons-widget/icons/medium/twitter.jpg" alt="Twitter" title="Twitter" height="32" width="32"></a></li>		
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

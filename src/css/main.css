@@ -82,6 +82,10 @@ article.post:nth-child(even) {
     color: rgba(0,0,0,0.87);
 }
 
+article.post:nth-child(even) p, article.post:nth-child(even) h3, article.post:nth-child(even) .date {
+    color: rgba(0,0,0,0.87);
+}
+
 /* featured image */
 .featured-image {
     background-size: cover;
@@ -285,6 +289,34 @@ a.btn-continue-reading {
 
 .featured a:hover h3, .featured a:focus h3, .featured a:active h3 {
     color: #a53232;
+}
+
+.about-me-image {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.widget {
+    margin: 20px 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icons-widget ul {
+    list-style-type: none;
+    margin: 0 0 15px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.social-icons-widget ul li {
+    display: inline-block;
+    margin: 0 6px 10px 0;
 }
 
 @media (min-width: 767px) {
